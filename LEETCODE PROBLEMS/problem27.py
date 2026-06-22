@@ -1,0 +1,12 @@
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        k=0
+        for i in range(len(nums)):
+            if nums[i]!=val:
+                nums[k]=nums[i]
+                k+=1
+        return k
+#Example 1:
+#Input: nums = [3,2,2,3], val = 3   
+#Output: 2
+#Explanation: Your function should return k = 2, with the first two elements of nums being 2. It does not matter what you leave beyond the returned k (hence they are underscores).
